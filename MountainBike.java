@@ -4,13 +4,17 @@ public class MountainBike extends Bicycle {
     public int seatHeight;
 
     // Default Constructor
-    public MountainBike() {
+    public MountainBike(int cadence, int gear, int speed, int seatHeight) {
+        super (cadence, gear, speed);
+        this.seatHeight = 0;
+
     	
     }
     // Paramiterised constructor
-//    public MountainBike(int startHeight) {
-//    	seatHeight = startHeight;
-//    }  
+   public MountainBike(int startHeight) {
+           this.seatHeight = startHeight;
+        System.out.println("I just created a mountain bike!");
+   }  
     
     // Paramiterised constructor using super keyword 
         
